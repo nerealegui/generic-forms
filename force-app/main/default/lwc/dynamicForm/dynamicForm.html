@@ -10,8 +10,7 @@
                 <lightning-messages> </lightning-messages>
                 <lightning-layout>
                     <lightning-layout-item flexibility="auto" padding="around-small">
-                        <template for:each={fieldList} for:item="field" for:index="fieldIndex">
-
+                        <template for:each={formattedFieldList} for:item="field" for:index="fieldIndex">
                             <lightning-input-field field-name={field.value} key={field.id} id={fieldIndex}
                                 required={field.required}>
                             </lightning-input-field>
