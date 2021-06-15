@@ -10,9 +10,7 @@ export default class dynamicForm extends NavigationMixin(LightningElement) {
     @api headerLabel;
     @api formIcon;
 
-    @track resource;
-    @track accountId;
-
+    formattedFieldList = [];
 
     handleSubmit(event) {
         event.preventDefault();
@@ -54,5 +52,11 @@ export default class dynamicForm extends NavigationMixin(LightningElement) {
                 pageName: "namePageHere"
             }
         });
+    }
+
+    connectedCallback(){
+        this.fieldList.split(",").forEach((element, index)=> {
+            this.formattedFieldList.push({ id: index, value: element, required: true });
+        });     
     }
 }

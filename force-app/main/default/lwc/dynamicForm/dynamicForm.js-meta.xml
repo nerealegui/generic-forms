@@ -12,9 +12,9 @@
     <targetConfigs>
         <targetConfig targets="lightning__HomePage">
             <property name="dynamicObject" type="String" default="Contact"></property>
-            <property name="fieldList" type="String" default="[{ id: 0, value: 'FirstName', required: true }]"></property>
+            <property name="fieldList" type="String" default=""></property>
             <property name="headerLabel" type="String" default="New Contact"></property>
-            <property name="formIcon" type="String" default="standard:contac"></property>
+            <property name="formIcon" type="String" default="standard:contact"></property>
            
         </targetConfig>
     </targetConfigs>
