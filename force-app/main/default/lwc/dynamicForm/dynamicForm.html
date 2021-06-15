@@ -1,0 +1,40 @@
+<template>
+
+
+    <lightning-card title={headerLabel} icon-name={formIcon}>
+
+        <div class="slds-p-horizontal_small c-container">
+
+            <lightning-record-edit-form object-api-name={dynamicObject} onsubmit={handleSubmit}>
+
+                <lightning-messages> </lightning-messages>
+                <lightning-layout>
+                    <lightning-layout-item flexibility="auto" padding="around-small">
+                        <template for:each={fieldList} for:item="field" for:index="fieldIndex">
+
+                            <lightning-input-field field-name={field.value} key={field.id} id={fieldIndex}
+                                required={field.required}>
+                            </lightning-input-field>
+
+                        </template>
+
+                    </lightning-layout-item>
+
+                </lightning-layout>
+
+                <lightning-button class="slds-m-top_small" variant="brand" type="submit" name="submit" label="Next">
+                </lightning-button>
+                <lightning-button class="slds-m-top_small" variant="brand" type="cancel" name="submit"
+                onclick={handleCancel} label="Cancel">
+                </lightning-button>
+            </lightning-record-edit-form>
+
+
+        </div>
+
+
+    </lightning-card>
+
+
+
+</template>

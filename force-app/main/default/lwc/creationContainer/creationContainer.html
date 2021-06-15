@@ -1,0 +1,15 @@
+<template>
+
+    <h1>Dynamic Form</h1>
+   
+    <c-dynamic-form onsubmitdynamicobject={handleDynamicObjectSubmit} form-icon={formIcon}
+        dynamic-object={dynamicObjectType} field-list={objectFieldList} header-label={formHeaderLabel}>
+    </c-dynamic-form>
+
+    <h1>Dynamic Row Form</h1>
+
+    <c-dynamic-row-form form-header={formHeaderLabel} form-icon={formIcon} field-list={objectFieldList}
+        dynamic-object={dynamicObjectType} object-id={keyObjectId} onsubmitrowobject={handleDynamicObjectSubmit}>
+    </c-dynamic-row-form>
+
+</template>
