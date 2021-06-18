@@ -1,12 +1,6 @@
 # generic-forms
 
 
-
-![image](https://user-images.githubusercontent.com/17240961/122134221-7881d180-ce3e-11eb-961b-91a551178118.png)
-
- 
-![image](https://user-images.githubusercontent.com/17240961/122134475-f645dd00-ce3e-11eb-8214-624ef98ff392.png)
-
 # Salesforce LWC Dynamic Forms
 ## _Ready to use Customizable LWC Components to generate dynamic forms_
 
